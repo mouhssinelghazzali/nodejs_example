@@ -1,0 +1,16 @@
+
+<%- include('../pages/header'); -%>
+<h1>
+  Title
+</h1>
+
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= message.content %></h5>
+    <p class="card-text"><%= message.created_at.fromNow() %> </p>
+    <a href="/message/<%= message.id %>" target="_blank" rel="noopener noreferrer"><%= message.id %></a>
+  </div>
+</div>
+
+<%- include('../pages/footer'); -%>
